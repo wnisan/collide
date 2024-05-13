@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cinemas>
+    <cinema>
+        <name>Cinema "Collide"</name>
+        <location>Umanskaya street 27, Minsk</location>
+        <image>cinema1.webp</image>
+    </cinema>
+    <cinema>
+        <name>Cinema "Collide"</name>
+        <location>Pervomaiskaya street 4a, Grodno</location>
+        <image>cinema2.jpg</image>
+    </cinema>
+    <cinema>
+        <name>Cinema "Collide"</name>
+        <location>Ulyanovskaya street 136, Minsk</location>
+        <image>cinema3.jpg</image>
+    </cinema>
+    <cinema>
+        <name>Cinema "Collide"</name>
+        <location>Bobruiskaya street 48, Brest</location>
+        <image>cinema4.jpg</image>
+    </cinema>
+    <cinema>
+        <name>Cinema "Collide"</name>
+        <location>Yakub Kolas street 8, Minsk</location>
+        <image>cinema5.webp</image>
+    </cinema>
+    <cinema>
+        <name>Cinema "Collide"</name>
+        <location>Pobediteley Avenue 18b, Grodno</location>
+        <image>cinema6.jpg</image>
+    </cinema>
+</cinemas>

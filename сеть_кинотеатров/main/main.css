@@ -1,0 +1,372 @@
+header {
+    color: #fff;
+    text-align: center;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 650px;
+    margin-top: 20px;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+.logo-icon {
+    position: absolute;
+    top: -20px;
+    left: 160px;
+    width: 120px; 
+    height: 140px;
+    z-index: 1000; 
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+main {
+    display: flex;
+    margin: 20px; 
+    margin:0 150px 0 150px;  
+}
+div{
+    font-size: 16px;
+}
+.movie-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+body {
+    background-color:rgba(29, 26, 26, 0.951);
+    font-family: 'Arial', sans-serif,;   
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.movie-gallery img {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+}
+.main-content {
+    width: 70%; 
+}
+
+footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info, .social-media {
+    margin-bottom: 20px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    text-align: left; 
+    margin-left: 170px;
+}
+
+.contact-info {
+    color: #fff;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.movie-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-description {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.age-limit,
+.movie-title,
+.movie-genre {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.age-limit,
+.movie-genre {
+    color: #868686; 
+}
+
+.movie-title {
+    color: #ffffff; 
+}
+
+.movie-container:hover .image-description {
+    opacity: 1;
+}
+
+hr.line {
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.filter-buttons {
+    display: flex;
+    position: relative;
+    z-index: 1000;
+    margin-top: 15px; 
+    margin-left: 170px; 
+}
+.filter-buttons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer; 
+    text-decoration: none;
+     font-size: 20px;
+}
+
+.filter-buttons a:hover {
+    text-decoration: underline; 
+}
+.filter-buttons button {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.flex-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    max-width: 1600px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    box-shadow: 10px 10px 44px -10px rgba(0,0,0,0.75);
+}
+
+#btn-prev, #btn-next {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: gray;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+
+#btn-prev:hover, #btn-next:hover {
+    opacity: 0.6;
+}
+
+#btn-next {
+    left: auto;
+    right: 0;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.dots-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot.active {
+    background-color: #000000;
+}
+
+span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+span:last-child{
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 1000px) {         /* планшет */
+    html{
+        width: 1200px;
+    }
+    h1{
+        margin-left: 250px;
+        margin-top: 20px;
+    }
+    a{
+        font-size: 20px;
+    }
+    nav ul{
+        margin-right: 380px;
+    }
+    main{
+        margin: 0;
+    }
+    .filter-buttons a {
+        font-size: 20px;
+    }
+    .movie-container{
+     margin: 5px;
+    }
+    .logo-icon{
+        top: -40px;
+        left: 100px;
+        width: 120px; 
+        height: 180px;  
+    } 
+    .image-description{
+        top: 5;
+        left: 5;
+        width: 120px; 
+        height: 180px;
+        margin: 5px 0;
+        margin-left: 15px; 
+    }
+    .movie-gallery {
+        grid-template-columns: repeat(3, 1fr); 
+        width: 100%;
+    }
+    .movie-gallery img{
+        width: 300px;
+        height: auto;
+    }
+}
+
+ @media only screen and (max-width: 760px) {   /* телефон */
+    .filter-buttons {
+        top: 20px;
+        left: 20px;
+    }
+    .filter-buttons a{
+        font-size: 30px;
+    }
+    body{
+        margin:0;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .logo-section {
+        margin-bottom: 20px; 
+    }
+    h1{
+        margin-right: 80px; 
+        margin-top: 50px; 
+        font-size: 40px;
+    }
+    nav{
+        margin-left: 400px;
+    }
+    a{
+        font-size: 30px;
+    }
+    .age-limit,
+.movie-title,
+.movie-genre{
+    font-size: 40px;
+    margin-left: -80px;
+}
+    main{
+        flex-direction: column;   
+    }
+    .movie-gallery {
+        grid-template-columns:  repeat(2, 1fr);
+    }
+    .footer{
+        margin-top: 20px;
+    }
+    .movie-gallery img {
+        margin-left: 20px;
+        width: 70%; 
+        height: auto;
+        margin: 5px 0; 
+    }
+    .image-description{
+        top: 0;
+        left: 0;
+        width: 120px; 
+        height: 312px;
+        margin: 5px 0; 
+    }
+    .logo-icon{
+        top: -10px;
+        left: 350px;
+        width: 150px; 
+        height: 150px;  
+    }
+    .contact-info, .social-media {
+        font-size: 20px;
+    }
+    .movie-container {
+        margin-left: 150px;
+    }
+}
