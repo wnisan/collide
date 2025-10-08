@@ -1,2 +1,2 @@
-# collide
-для курсового проекта по КЯР
+# Cinema website "Collide"
+For a course project on the "КЯР"
